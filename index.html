@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>VK - Fotografika</title>
+</head>
+<style>
+
+/*font-family: 'Righteous', cursive;*/
+@import url('https://fonts.googleapis.com/css2? family= Righteous & family= Ubuntu:wght@700 & display=swap');
+/*font-family: 'Ubuntu', sans-serif;*/
+
+
+
+
+
+
+background-color: beige
+
+  /* reset em predefinicoes do site */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%; /* reset */
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  padding: 20px;
+  /*background: linear-gradient(220deg, darkolivegreen 1%, azure 100%);*/
+  border: green;
+  
+}
+
+.menu {
+  display: flex;
+  gap: 13px;
+}
+
+.menu-item {
+  color: darkolivegreen;
+  font-family: 'Righteous', cursive;
+  font-weight: 300;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}  
+
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 250px;
+}
+
+.conteudo-principal-titulo {
+  margin: -150px auto;
+  margin-left: 45px;
+  font-size: 40px;
+  color: azure;
+  font-family: 'Righteous', cursive;
+  font-weight: 800;
+}
+
+.segunda-p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sengunda-p-conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.conteudo-principal-subtitulo {
+  font-size: 28px;
+  color: darkolivegreen;
+  font-family: 'Righteous', cursive;
+  font-weight: 800;
+  margin-bottom: 5px;
+  border-bottom: 0.4px solid darkolivegreen;
+}
+
+.conteudo-principal-paragrafo {
+  font-size: 23px;
+  color: darkslategrey;
+  font-family: 'Righteous', cursive;
+  font-weight: 300;
+  /*border-bottom: 0.4px solid darkolivegreen;*/
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.conteudo-secundario-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteudo-secundario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
+  margin-left: 9px;
+}
+
+.titulo-paragrafo-noivo {
+  font-size: 22px;
+  color: darkolivegreen;
+  font-family: 'Righteous', cursive;
+  font-weight: 800;
+  margin-bottom: 5px;
+  border-bottom: 0.4px solid darkolivegreen;
+  
+}
+
+.paragrafo-noivo {
+  font-size: 15px;
+  color: darkslategrey;
+  font-family: 'Righteous', cursive;
+  font-weight: 300;
+  /*border-bottom: 0.4px solid darkolivegreen;*/
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-paragrafo-noiva{
+  font-size: 22px;
+  color: darkolivegreen;
+  font-family: 'Righteous', cursive;
+  font-weight: 800;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  border-bottom: 0.4px solid darkolivegreen;
+  
+}
+
+.paragrafo-noiva {
+  font-size: 15px;
+  color: darkslategrey;
+  font-family: 'Righteous', cursive;
+  font-weight: 300;
+  /*border-bottom: 0.4px solid darkolivegreen;*/
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteudo-pre-wedding {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.titulo-conteudo-pre-wedding {
+  font-size: 50px;
+  color: darkolivegreen;
+  font-family: 'Righteous', cursive;
+  font-weight: 800;
+  margin-top: 26px;
+  margin-bottom: 5px;
+}
+
+.todas-fotos-pre {
+  display: block;
+  margin: 0 auto;
+  margin-top: 9px;
+  
+}
+
+
+.conteudo-cerimonia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.titulo-conteudo-cerimonia {
+  font-size: 50px;
+  color: darkolivegreen;
+  font-family: 'Righteous', cursive;
+  font-weight: 800;
+}
+
+.subtitulo-conteudo-cerimonia {
+  font-size: 38px;
+  color: darkolivegreen;
+  font-family: 'Righteous', cursive;
+  font-weight: 500;
+  margin-top: -25px;
+}
+
+.local-cerimonia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.paragrafo-endereco-cerimonia {
+  font-size: 23px;
+  color: darkslategrey;
+  font-family: 'Righteous', cursive;
+  font-weight: 300;  
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;  
+  font-size: 23px;
+  color: darkslategrey;
+  font-family: 'Righteous', serif;
+  font-weight: 300;  
+}
+
+img#logo {
+  max-width: 65px;
+}
+
+img#icone-casal {
+  max-width: 60px;
+}
+
+img#foto-conteudo-principal {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+img#foto-casal-fechada {
+  max-width: 100%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+img#foto-noivo {
+  max-width: 100%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+img#foto-noiva {
+  max-width: 100%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 170px;
+  border-radius: 5px;
+}
+
+img#foto-mapa-cerimonia {
+  max-width: 70%;
+  border-radius: 5px;  
+}
+
+img#foto-aberta-local-da-cerimonia {
+  max-width: 100%;
+  border-radius: 5px;   
+}
+
+font-size: 23px;
+  color: darkslategrey;
+  font-family: 'Righteous', cursive;
+  font-weight: 300;
+  /*border-bottom: 0.4px solid darkolivegreen;*/
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+</style>
+
+
+<body>
+  <header class="cabecalho">
+    <div>
+      <img id="logo" src="https://i.postimg.cc/Xq4T2fTC/Novo-Projeto.png" alt="logo do site">
+    </div>
+    <div >
+      <nav class="menu">
+        <a class="menu-item" href="#">inicio</a>
+        <a class="menu-item" href="#">galeria</a> 
+        <a class="menu-item" href="# ">contato</a>
+      </nav>
+    </div>
+    <div>
+        <img id="icone-casal"src="https://i.postimg.cc/Z5dVd9Qt/Picsart-23-03-14-20-57-24-664.png" alt="icone casal"
+      </div>
+  </header>
+    <main class="conteudo">
+      <section class="conteudo-principal">
+      <div class="conteudo-principal-escrito">
+        <img id="foto-conteudo-principal" src="https://i.postimg.cc/Wp83shW8/IMG-20230105-185800-835.jpg" alt="foto casal aberta">
+        <h1 class="conteudo-principal-titulo">
+          VK FotografiK 
+        </h1>
+      </div>
+      </section>
+    </main>
+    <main>
+        <section class="segunda-p">
+      <div class="sengunda-p-conteudo-principal-escrito">
+        <h2 class="conteudo-principal-subtitulo">
+          Bem Vindo
+        </h2>
+        <p class="conteudo-principal-paragrafo"> 
+          Bem-vindo ao nosso site de fotografia!
+Aqui, capturamos momentos únicos
+e transformamos em imagens incríveis
+que contam histórias. Nosso objetivo é fornecer uma experiência
+única de fotografia para cada um de nossos clientes,
+capturando a essência do momento e criando
+memórias duradouras. Nós nos orgulhamos
+de oferecer um serviço personalizado e de alta
+qualidade, que atende às necessidades individuais
+de cada cliente. Com anos de experiência
+em fotografia, estamos ansiosos para trabalhar
+com você e transformar seus momentos em memórias inesquecíveis.
+
+
+
+ </p>
+        <img id="foto-casal-fechada" src=" https://i.postimg.cc/gkwP1Jfn/IMG-20230315-170835.jpg" alt="foto casal 16x9 fechada">
+      </div>
+       </section class="conteudo-secundario-principal">
+        <section class="conteudo-secundario">
+          <div>
+            <img id="foto-noivo" src="   https://i.postimg.cc/qvx0xFPL/IMG-20230315-171006.jpg
+               " alt="foto do noivo">
+            <h2 class="titulo-paragrafo-noivo"> detalhes</h2>
+            <p class="paragrafo-noivo">
+           
+            
+            </p>
+          </div>
+          <div>
+            <img id="foto-noiva" src="  https://i.postimg.cc/zGr8WNcv/IMG-20230315-171024.jpg  " alt="foto da noiva">
+            <h2 class="titulo-paragrafo-noiva">contam</h2>
+              <p class="paragrafo-noiva">
+          </div>
+            
+          </section>
+            <section class="conteudo-pre-wedding">
+              <h2 class="titulo-conteudo-pre-wedding">
+                Galeria de fotos.</h2>
+              <section class="fotos-pre-wedding">
+              <div class="todas-fotos-pre">
+                  
+               <div>
+                <img src="   https://i.postimg.cc/x1zgrDfv/20220725101210-IMG-7568-02.jpg
+
+ " alt="galeria">
+                 <img src="    https://i.postimg.cc/RFMTnWcd/20220725101703-IMG-7577-01.jpg    " alt="galeria">
+               </div>
+               <div>
+              <img src="    https://i.postimg.cc/XJL6wBtY/20220725103120-IMG-7603.jpg " alt="galeria">
+                 <img src="   https://i.postimg.cc/Jn1944tV/20220725105223-IMG-7633-01-02.jpg  " alt="galeria">
+               </div>
+               
+               <div>
+               <img src="   https://i.postimg.cc/GmGNFsyn/20220725112929-IMG-7680-01-02.jpg " alt="galeria">
+                 <img src="   https://i.postimg.cc/pX93dSVT/20220725113008-IMG-7684-01-01.jpg     " alt="galeria">
+               </div>
+               
+               <div>
+               <img src="   https://i.postimg.cc/bvRBMcg6/Gradient-20221220-224409-1.jpg  " alt="galeria">
+                 <img src="    https://i.postimg.cc/LX6bFC0m/Gradient-20221222-224117.jpg    " alt="galeria">
+               </div>
+               
+               <div>
+               <img src="   https://i.postimg.cc/kG2YBVmZ/Gradient-20221222-224623.jpg  " alt="galeria">
+                 <img src="https://i.postimg.cc/J7FdSQ3W/Gradient-20221222-224828.jpg " alt="galeria">
+               </div>
+               <div>
+               <img src="  https://i.postimg.cc/tRh71BrX/IMG-0230-1.jpg   " alt="galeria">
+                 <img src="  https://i.postimg.cc/QCbXfnP1/IMG-20230105-185754-300.jpg     " alt="galeria">
+               </div>
+               <div>
+               <img src="   https://i.postimg.cc/7ZcqtzBs/IMG-0235-1.jpg  " alt="galeria">
+                 <img src="  https://i.postimg.cc/7YKH7dSy/IMG-0357.jpg   " alt="galeria">
+               </div>
+               <div>
+               <img src="  https://i.postimg.cc/L80sdwsV/IMG-0377.jpg  " alt="galeria">
+                 <img src=" https://i.postimg.cc/Jzhh2MRn/IMG-0398.jpg    " alt="galeria">
+               </div>
+               <div>
+                   <img src="   https://i.postimg.cc/0jxkdqt9/IMG-20230105-185754-410.jpg   " alt="">
+                   <img src="  https://i.postimg.cc/PqwTgq9t/IMG-20230105-185755-643.jpg " alt="">
+               </div>
+               <div>
+                   <img src="  https://i.postimg.cc/PJtHvQxx/IMG-20230105-185756-233.jpg " alt="">
+                  <img src="  https://i.postimg.cc/7Zpynk6j/IMG-20230105-185758-009.jpg  " alt="">
+               </div>
+               <div>
+                   <img src="  https://i.postimg.cc/pXrbNT5g/IMG-20230105-185758-251.jpg" alt="">
+                   <img src="https://i.postimg.cc/157S46Zm/IMG-20230105-185759-522.jpg" alt="">
+               </div>
+               <div>
+                   <img src="https://i.postimg.cc/WbyRsvMt/IMG-20230105-185800-925.jpg" alt="">
+                  <img src="https://i.postimg.cc/pLjSxnW1/IMG-8990.jpg" alt="">
+               </div>
+               
+            </div>
+           </section>
+              
+            </section>
+      <section>
+          <div class="conteudo-cerimonia">
+        <h1 class="titulo-conteudo-cerimonia" id="contato">
+          Contato 
+        </h1>
+          <h2 class="subtitulo-conteudo-cerimonia"> Atendemos por toda Goiânia </h2>
+        </div>
+        <div class="local-cerimonia">
+        
+          <p class="paragrafo-endereco-cerimonia"> 
+            telefone whatsapp +55 62 9184-4352<br>
+            email: vkfotografika@gmail.com</p>
+            <a class="falar-comigo"href="  https://wa.me/message/2WBSI4BAHONLL1  "> click aqui para falar comigo.</a>
+        
+        <img id="foto-aberta-local-da-cerimonia"src="  https://i.postimg.cc/KjqsJPZJ/IMG-20230315-181309.jpg  " alt="foto aberta local da cerimonia">
+        </div>
+      </section>
+    </main>
+    <footer class="rodape">
+      <p class="paragrafo-rodape">planos para o seu casamento entre em contato </p>
+    </footer>
+</body>
+</html>
+ 
